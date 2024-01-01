@@ -1,0 +1,144 @@
+.tag {
+  display: flex;
+  align-items: center;
+  border-radius: 24.4rem;
+  background: #fff;
+  max-width: 12.1rem;
+  padding: 6px 4px;
+  &.blue-tag {
+    .icon {
+      background-color: rgba(63, 104, 186, 0.15);
+    }
+    span {
+      color: #3f67ba;
+    }
+  }
+  .icon {
+    width: 2.6rem;
+    height: 2.6rem;
+    border-radius: 50%;
+    background-color: rgba(194, 0, 0, 0.2);
+    @include centerTotalFlex;
+    margin-right: 8px;
+  }
+  span {
+    color: #c20001;
+    font-family: Inter;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+  }
+}
+
+.search {
+  border-radius: 122px;
+  background: #fff;
+  width: 100%;
+  max-width: 40.3rem;
+  height: 5.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0.7rem 0 2.5rem;
+  input[type="text"] {
+    border: 0;
+    width: 80%;
+    outline: none;
+    color: #a0afba;
+    font-size: 1.5rem;
+    line-height: 150%;
+    &::placeholder {
+      color: #a0afba;
+    }
+  }
+  button {
+    width: 42px;
+    height: 42px;
+    border: 1px solid transparent;
+    transition: border-color 0.3s;
+    &:hover {
+      border-color: #3f67ba;
+    }
+    border-radius: 50%;
+    @include centerTotalFlex;
+    background-color: rgba(158, 185, 225, 0.1);
+  }
+}
+
+.type-filter {
+  display: flex;
+  align-items: center;
+  filter: grayscale(100%);
+  opacity: 0.6;
+  transition: all 0.3s;
+  &:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+  }
+  .icon {
+    width: 2.8rem;
+    height: 2.8rem;
+    @include centerTotalFlex;
+    margin-right: 0.5rem;
+  }
+  span {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 150%; /* 22.5px */
+  }
+  &.bug {
+    color: #9bba48;
+  }
+  &.dark {
+    color: #595761;
+  }
+  &.dragon {
+    color: #2c6ac1;
+  }
+  &.eletric {
+    color: #eed967;
+  }
+  &.fairy {
+    color: #e296e1;
+  }
+  &.fighting {
+    color: #c44d61;
+  }
+  &.ground {
+    color: #ce8056;
+  }
+  &.ice {
+    color: #8bcec1;
+  }
+  &.normal {
+    color: #a0a29f;
+  }
+  &.poison {
+    color: #ac6aca;
+  }
+  &.psychic {
+    color: #eb8b85;
+  }
+  &.rock {
+    color: #8bcec1;
+  }
+  &.ghost {
+    color: #616eb7;
+  }
+  &.grass {
+    color: #73b861;
+  }
+  &.steel {
+    color: #6594a1;
+  }
+  &.water {
+    color: #88a3d4;
+  }
+  &.fire {
+    color: #f66d6d;
+  }
+  &.flying {
+    color: #a6bbe8;
+  }
+}
